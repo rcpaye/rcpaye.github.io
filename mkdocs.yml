@@ -1,0 +1,39 @@
+# Project Information
+site_name: Rylan C. Paye
+site_url: https://rcpaye.github.io
+site_author: Rylan C. Paye
+site_description: >-
+  Nuclear engineering Ph.D. candidate specializing in computational methods for radiation transport and high-energy density physics. Develops novel space-time discretization schemes for the Boltzmann transport equation, achieving up to 75-87.5% memory reduction in production-scale simulations through contributions to the Capsaicin and Cassio code bases at Los Alamos National Laboratory. Proficient in Python, FORTRAN, and C/C++, with hands-on experience in MPI/OpenMP parallel computing on large-scale HPC systems.
+
+# Repository
+# repo_name: rcpaye/rcpaye.github.io
+# repo_url: https://github.com/rcpaye/rcpaye.github.io
+
+# Configuration
+theme:
+  name: mkdocs
+  color_mode: auto
+  user_color_mode_toggle: True
+  nav_style: dark
+
+plugins:
+- bibtex:
+    bib_file: "docs/publications.bib"
+    csl_file: "docs/american-nuclear-society.csl"
+    full_bib_command: \full_bibliography
+
+markdown_extensions:
+  - footnotes
+
+extra_css:
+  - stylesheets/extra.css
+
+# Page tree
+nav:
+- About: index.md
+- Research: proj.md
+- Publications: pubs.md
+- CV: RylanPayeCV.pdf
+- LinkedIn: https://www.linkedin.com/in/rylan-paye
+- Google Scholar: https://scholar.google.com/citations?user=nj2Q1QkAAAAJ&hl=en
+- Contact: cont.md
